@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>HwMon.App</RootNamespace>
+    <AssemblyName>HwMon</AssemblyName>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RollForward>LatestMajor</RollForward>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HwMonitor.Core\HwMonitor.Core.csproj" />
+  </ItemGroup>
+</Project>

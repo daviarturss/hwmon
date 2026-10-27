@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <RootNamespace>HwMon.Core</RootNamespace>
+    <AssemblyName>HwMon.Core</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!--
+      0.9.3 é a última versão que ainda carrega o driver de kernel (WinRing0) embutido.
+      A partir de 0.9.4 a biblioteca deixou de trazer o driver e, sem ele, os sensores
+      de MSR da CPU (temperatura, tensão, clock, potência) retornam 0 no Windows.
+      Validado nesta máquina (Ryzen 5 2600): 0.9.6 = 0 °C; 0.9.3 = 46,9 °C.
+    -->
+    <PackageReference Include="LibreHardwareMonitorLib" Version="0.9.3" />
+  </ItemGroup>
+</Project>
+

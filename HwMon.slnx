@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/HwMonitor.App/HwMonitor.App.csproj" />
+    <Project Path="src/HwMonitor.Cli/HwMonitor.Cli.csproj" />
+    <Project Path="src/HwMonitor.Core/HwMonitor.Core.csproj" />
+  </Folder>
+</Solution>
